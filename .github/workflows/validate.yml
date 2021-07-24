@@ -1,10 +1,10 @@
-name: Validate
+name: Validate # name of the workflow. This will be displayed everywhere
 
-on: [pull_request, push]
+on: [pull_request, push] # tells github actions to run these on all PRs and push events
 
 jobs:
   validate:
-    name: Validate Source Code
+    name: Validate Source Code # name of the job
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Codebase
